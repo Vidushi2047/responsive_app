@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_app/constant/app_sizes.dart';
 import 'package:responsive_app/responsive.dart';
-import 'package:responsive_app/screen/dashBoard_screen.dart';
+import 'package:responsive_app/widget/fileInfoGridView.dart';
 
 class MyFilesRow extends StatelessWidget {
   const MyFilesRow({
@@ -38,7 +38,7 @@ class MyFilesRow extends StatelessWidget {
             desktop: FileInfoGridView(
               childAspectRatio: _size.width < 1400 ? 1.1 : 1.4,
             ),
-            tablet: FileInfoGridView()),
+            tablet: const FileInfoGridView()),
       ],
     );
   }

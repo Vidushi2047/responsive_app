@@ -16,7 +16,6 @@ class MyApp extends StatelessWidget {
       create: (context) => MenuAppCubit(),
       child: const MaterialApp(
         debugShowCheckedModeBanner: false,
-        themeMode: ThemeMode.dark,
         home: HomeScreen(),
       ),
     );
